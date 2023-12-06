@@ -288,7 +288,7 @@
 (defn track-transact
   "Like transact, but instead of returning you a database, returns a map of
 
-    :result the result of (apply transact db tx)
+    :db the result of (apply transact db tx)
     :changes a map of {query {:added [row1, row2 ...], :deleted [row1, row2, ..]}, ..}
 
   The :changes allow you to react to additions/removals from derived queries, and build reactive systems."
